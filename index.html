@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" />
+
+    <link rel="stylesheet" href="js/jquery-ui/jquery-ui.min.css" />
+    <link rel="stylesheet" href="js/wickedpicker.min.css" />
+
+
+</head>
+
+<body>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js" integrity="sha384-7aThvCh9TypR7fIc2HV4O/nFMVCBwyIUKL8XCtKE+8xgCgl/PQGuFsvShjr74PBp" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"> 
+            <img src="nail.png" width="60" height="60" class="d-inline-block align-top" alt=""></img>
+            Uniform Nails
+            
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <!--    <div class="navbar-nav"> -->
+            <a class="nav-item nav-link active" href="#book">Book an Appoinment<span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="#time">Time</a>
+            <a class="nav-item nav-link" href="#pricing">Pricing</a>
+            <a class="nav-item nav-link" href="#contact">Contact Us</a>
+            <a class="nav-item nav-link" href="#contact">Our Team</a>
+        </div>
+    </nav>
+    <header></header>
+    <section class="container Book an appointment" id="book">
+        <h3>Book an appointment:</h3>
+
+        <form id="appt">
+
+
+            <div class="form-group">
+                <label for="appt-name">Full Name</label>
+                <input type="name" class="form-control" id="appt-name" placeholder="name">
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlSelect1">Services</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                    <option>Lacquer : $10.00</option>
+                    <option>Gel : $15.00</option>
+                    <option>French Tip : $30.00</option>
+                    <option>Acrylic : $40.00</option>
+
+                </select>
+            </div>
+            <input id="datepicker" />
+            <input type="text" name="timepicker" class="timepicker"/>
+            <input class="btn btn-primary" type="submit" value="Submit">
+
+
+        </form>
+
+
+    </section>
+
+    <section class="container pricing wow fadeInDown" id="pricing">
+        <h1><b>Pricing:</h1></b>
+            <br>
+            <h1> </h1>
+            <div class="row">
+                <div class="col-md-3">
+                    <span class="pricing-label">
+                    <h4>Lacquer</h4>
+                </span>
+                </div>
+                <div class="col-md-3">
+                    <span class="pricing-label">
+                    <h4>Gel</h4>
+                </span>
+                </div>
+                <div class="col-md-3">
+                    <span class="pricing-label">
+                    <h4>French Tip</h4>
+                </span>
+                </div>
+                <div class="col-md-3">
+                    <span class="pricing-label">
+                    <h4>Acrylic</h4>
+                </span>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3">
+                    <span class="prices">$10.00</span>
+                </div>
+                <div class="col-md-3">
+                    <span class="prices">$15.00</span>
+                </div>
+                <div class="col-md-3">
+                    <span class="prices">$30.00</span>
+                </div>
+                <div class="col-md-3">
+                    <span class="prices">$40.00</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <p> </p>
+                </div>
+                <div class="col-md-4">
+                    <p> </p>
+                </div>
+                <div class="col-md-4">
+                    <p> </p>
+                </div>
+            </div>
+
+
+    </section>
+
+    <section class="container time wow fadeInDown" id="time">
+        <h1><b>Time:</h1></b>
+            <br>
+            <h1> </h1>
+            <div class="row">
+                <div class="col-md-3">
+                    <span>
+                    <h4>Monday-Thursday</h4>
+                </span>
+                </div>
+                <div class="col-md-3">
+                    <span>
+                    <h4>Friday</h4>
+                </span>
+                </div>
+                <div class="col-md-3">
+                    <span>
+                    <h4>Saturday</h4>
+                </span>
+                </div>
+                <div class="col-md-3">
+                    <span>
+                    <h4>Sunday</h4>
+                </span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <p> </p>
+                </div>
+                <div class="col-md-4">
+                    <p> </p>
+                </div>
+                <div class="col-md-4">
+                    <p> </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <p> </p>
+                </div>
+                <div class="col-md-4">
+                    <p> </p>
+                </div>
+                <div class="col-md-4">
+                    <p> </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <span class="Monday-Thursday">10:30am - 9:00pm</span>
+                </div>
+                <div class="col-md-3">
+                    <span class="Friday">10:30am - 8:30pm</span>
+                </div>
+                <div class="col-md-3">
+                    <span class="Saturday">9:30am - 7:30pm</span>
+                </div>
+                <div class="col-md-3">
+                    <span class="Sunday">11:00am - 6:00pm</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <p> </p>
+                </div>
+                <div class="col-md-4">
+                    <span><strong> </strong></span>
+                </div>
+                <div class="col-md-4">
+                    <span><strong> </strong></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <p> </p>
+                </div>
+                <div class="col-md-4">
+                    <span><strong> </strong></span>
+                </div>
+                <div class="col-md-4">
+                    <span><strong> </strong></span>
+                </div>
+            </div>
+    </section>
+
+    <section class="container contact wow fadeInDown" id="contact">
+        <div class="row">
+            <div class="col-md-4">
+                <h1><b>Contact Us</h1></b>
+                    <i class="fas fa-home"></i> Address: 859 West Forest, 11023 NY
+                    <p></p>
+                    <i class="fas fa-envelope"></i> Email: nails2cute@gmail.com
+                    <p></p>
+                    <i class="fas fa-phone"></i> Phone Number: (718)-134-3253
+                    <p></p>
+                    <i class="fas fa-globe"></i> Website: nails2cute.com
+                    <p></p>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="team container wow fadeInDown"> 
+    <p></p>
+        <h1><b>Our Team:</h1></b>
+            <br>
+            <h1> </h1>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="new-imgs/1.jpg"></img>
+                    <h1> Michelle Lauren </h1>
+                    <h3>Owner</h3>
+                    <p>Michelle Lauren founded the famous Uniform Nails in 2018. It has services such as Lacquer, Gel, French Tip and finally Acrylic Nails</p>
+                </div>
+
+                <div class="col-md-4">
+                    <img src="codingpt2.jpg"></img>
+                    <h1>Kimberly Thompson</h1>
+                    <h3>Stylist</h3>
+                    <p>Kimberly Thompson has had over 10 years of experience as a nail technician. </p>
+                </div>
+
+                <div class="col-md-4">
+                    <img src="codingpt3.jpg"></img>
+                    <h1>Sebastian Williams</h1>
+                    <h3>Receptionist</h3>
+                    <p>Sebastian Williams has been known as the top receptionist with a constant smile for over 5 years. </p>
+                </div>
+
+
+    </section>
+
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+    <script
+            src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+            integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+            crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/wickedpicker.min.js"></script>
+
+
+        <script src="js/main.js"></script>
+</body>
+
+</html>

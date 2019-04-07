@@ -1,0 +1,443 @@
+/*!
+ * jQuery UI CSS Framework 1.12.1
+ * http://jqueryui.com
+ *
+ * Copyright jQuery Foundation and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ *
+ * http://api.jqueryui.com/category/theming/
+ *
+ * To view and modify this theme, visit http://jqueryui.com/themeroller/?scope=nails&folderName=swanky-purse&cornerRadiusShadow=12px&offsetLeftShadow=-8px&offsetTopShadow=-8px&thicknessShadow=8px&opacityShadow=30&bgImgOpacityShadow=75&bgTextureShadow=flat&bgColorShadow=ddd4b0&opacityOverlay=80&bgImgOpacityOverlay=20&bgTextureOverlay=diamond&bgColorOverlay=372806&iconColorError=ff7519&fcError=803f1e&borderColorError=c26629&bgImgOpacityError=65&bgTextureError=highlight_hard&bgColorError=fee4bd&iconColorHighlight=070603&fcHighlight=060200&borderColorHighlight=362917&bgImgOpacityHighlight=25&bgTextureHighlight=diamond&bgColorHighlight=d5ac5d&iconColorActive=f9f2bd&fcActive=f9f2bd&borderColorActive=efec9f&bgImgOpacityActive=8&bgTextureActive=diamond&bgColorActive=443113&iconColorHover=f2ec64&fcHover=f8eec9&borderColorHover=362917&bgImgOpacityHover=25&bgTextureHover=diamond&bgColorHover=675423&iconColorDefault=e8e2b5&fcDefault=f8eec9&borderColorDefault=362917&bgImgOpacityDefault=10&bgTextureDefault=diamond&bgColorDefault=4f4221&iconColorContent=efec9f&fcContent=efec9f&borderColorContent=efec9f&bgImgOpacityContent=8&bgTextureContent=diamond&bgColorContent=443113&iconColorHeader=e9cd86&fcHeader=eacd86&borderColorHeader=baaa5a&bgImgOpacityHeader=8&bgTextureHeader=diamond&bgColorHeader=261803&cornerRadius=5px&fsDefault=1.2em&fwDefault=bold&ffDefault=Georgia%2CVerdana%2CArial%2Csans-serif
+ */
+
+
+/* Component containers
+----------------------------------*/
+nails .ui-widget {
+	font-family: Georgia,Verdana,Arial,sans-serif;
+	font-size: 1.2em;
+}
+nails .ui-widget .ui-widget {
+	font-size: 1em;
+}
+nails .ui-widget input,
+nails .ui-widget select,
+nails .ui-widget textarea,
+nails .ui-widget button {
+	font-family: Georgia,Verdana,Arial,sans-serif;
+	font-size: 1em;
+}
+nails .ui-widget.ui-widget-content {
+	border: 1px solid #362917;
+}
+nails .ui-widget-content {
+	border: 1px solid #efec9f;
+	background: #443113 url("images/ui-bg_diamond_8_443113_10x8.png") 50% 50% repeat;
+	color: #efec9f;
+}
+nails .ui-widget-content a {
+	color: #efec9f;
+}
+nails .ui-widget-header {
+	border: 1px solid #baaa5a;
+	background: #261803 url("images/ui-bg_diamond_8_261803_10x8.png") 50% 50% repeat;
+	color: #eacd86;
+	font-weight: bold;
+}
+nails .ui-widget-header a {
+	color: #eacd86;
+}
+
+/* Interaction states
+----------------------------------*/
+nails .ui-state-default,
+nails .ui-widget-content .ui-state-default,
+nails .ui-widget-header .ui-state-default,
+nails .ui-button,
+
+/* We use html here because we need a greater specificity to make sure disabled
+works properly when clicked or hovered */
+html nails .ui-button.ui-state-disabled:hover,
+html nails .ui-button.ui-state-disabled:active {
+	border: 1px solid #362917;
+	background: #4f4221 url("images/ui-bg_diamond_10_4f4221_10x8.png") 50% 50% repeat;
+	font-weight: bold;
+	color: #f8eec9;
+}
+nails .ui-state-default a,
+nails .ui-state-default a:link,
+nails .ui-state-default a:visited,
+anails .ui-button,
+a:linknails .ui-button,
+a:visitednails .ui-button,
+nails .ui-button {
+	color: #f8eec9;
+	text-decoration: none;
+}
+nails .ui-state-hover,
+nails .ui-widget-content .ui-state-hover,
+nails .ui-widget-header .ui-state-hover,
+nails .ui-state-focus,
+nails .ui-widget-content .ui-state-focus,
+nails .ui-widget-header .ui-state-focus,
+nails .ui-button:hover,
+nails .ui-button:focus {
+	border: 1px solid #362917;
+	background: #675423 url("images/ui-bg_diamond_25_675423_10x8.png") 50% 50% repeat;
+	font-weight: bold;
+	color: #f8eec9;
+}
+nails .ui-state-hover a,
+nails .ui-state-hover a:hover,
+nails .ui-state-hover a:link,
+nails .ui-state-hover a:visited,
+nails .ui-state-focus a,
+nails .ui-state-focus a:hover,
+nails .ui-state-focus a:link,
+nails .ui-state-focus a:visited,
+anails .ui-button:hover,
+anails .ui-button:focus {
+	color: #f8eec9;
+	text-decoration: none;
+}
+
+nails .ui-visual-focus {
+	box-shadow: 0 0 3px 1px rgb(94, 158, 214);
+}
+nails .ui-state-active,
+nails .ui-widget-content .ui-state-active,
+nails .ui-widget-header .ui-state-active,
+anails .ui-button:active,
+nails .ui-button:active,
+nails .ui-button.ui-state-active:hover {
+	border: 1px solid #efec9f;
+	background: #443113 url("images/ui-bg_diamond_8_443113_10x8.png") 50% 50% repeat;
+	font-weight: bold;
+	color: #f9f2bd;
+}
+nails .ui-icon-background,
+nails .ui-state-active .ui-icon-background {
+	border: #efec9f;
+	background-color: #f9f2bd;
+}
+nails .ui-state-active a,
+nails .ui-state-active a:link,
+nails .ui-state-active a:visited {
+	color: #f9f2bd;
+	text-decoration: none;
+}
+
+/* Interaction Cues
+----------------------------------*/
+nails .ui-state-highlight,
+nails .ui-widget-content .ui-state-highlight,
+nails .ui-widget-header .ui-state-highlight {
+	border: 1px solid #362917;
+	background: #d5ac5d url("images/ui-bg_diamond_25_d5ac5d_10x8.png") 50% 50% repeat;
+	color: #060200;
+}
+nails .ui-state-checked {
+	border: 1px solid #362917;
+	background: #d5ac5d;
+}
+nails .ui-state-highlight a,
+nails .ui-widget-content .ui-state-highlight a,
+nails .ui-widget-header .ui-state-highlight a {
+	color: #060200;
+}
+nails .ui-state-error,
+nails .ui-widget-content .ui-state-error,
+nails .ui-widget-header .ui-state-error {
+	border: 1px solid #c26629;
+	background: #fee4bd url("images/ui-bg_highlight-hard_65_fee4bd_1x100.png") 50% top repeat-x;
+	color: #803f1e;
+}
+nails .ui-state-error a,
+nails .ui-widget-content .ui-state-error a,
+nails .ui-widget-header .ui-state-error a {
+	color: #803f1e;
+}
+nails .ui-state-error-text,
+nails .ui-widget-content .ui-state-error-text,
+nails .ui-widget-header .ui-state-error-text {
+	color: #803f1e;
+}
+nails .ui-priority-primary,
+nails .ui-widget-content .ui-priority-primary,
+nails .ui-widget-header .ui-priority-primary {
+	font-weight: bold;
+}
+nails .ui-priority-secondary,
+nails .ui-widget-content .ui-priority-secondary,
+nails .ui-widget-header .ui-priority-secondary {
+	opacity: .7;
+	filter:Alpha(Opacity=70); /* support: IE8 */
+	font-weight: normal;
+}
+nails .ui-state-disabled,
+nails .ui-widget-content .ui-state-disabled,
+nails .ui-widget-header .ui-state-disabled {
+	opacity: .35;
+	filter:Alpha(Opacity=35); /* support: IE8 */
+	background-image: none;
+}
+nails .ui-state-disabled .ui-icon {
+	filter:Alpha(Opacity=35); /* support: IE8 - See #6059 */
+}
+
+/* Icons
+----------------------------------*/
+
+/* states and images */
+nails .ui-icon {
+	width: 16px;
+	height: 16px;
+}
+nails .ui-icon,
+nails .ui-widget-content .ui-icon {
+	background-image: url("images/ui-icons_efec9f_256x240.png");
+}
+nails .ui-widget-header .ui-icon {
+	background-image: url("images/ui-icons_e9cd86_256x240.png");
+}
+nails .ui-state-hover .ui-icon,
+nails .ui-state-focus .ui-icon,
+nails .ui-button:hover .ui-icon,
+nails .ui-button:focus .ui-icon {
+	background-image: url("images/ui-icons_f2ec64_256x240.png");
+}
+nails .ui-state-active .ui-icon,
+nails .ui-button:active .ui-icon {
+	background-image: url("images/ui-icons_f9f2bd_256x240.png");
+}
+nails .ui-state-highlight .ui-icon,
+nails .ui-button .ui-state-highlight.ui-icon {
+	background-image: url("images/ui-icons_070603_256x240.png");
+}
+nails .ui-state-error .ui-icon,
+nails .ui-state-error-text .ui-icon {
+	background-image: url("images/ui-icons_ff7519_256x240.png");
+}
+nails .ui-button .ui-icon {
+	background-image: url("images/ui-icons_e8e2b5_256x240.png");
+}
+
+/* positioning */
+nails .ui-icon-blank { background-position: 16px 16px; }
+nails .ui-icon-caret-1-n { background-position: 0 0; }
+nails .ui-icon-caret-1-ne { background-position: -16px 0; }
+nails .ui-icon-caret-1-e { background-position: -32px 0; }
+nails .ui-icon-caret-1-se { background-position: -48px 0; }
+nails .ui-icon-caret-1-s { background-position: -65px 0; }
+nails .ui-icon-caret-1-sw { background-position: -80px 0; }
+nails .ui-icon-caret-1-w { background-position: -96px 0; }
+nails .ui-icon-caret-1-nw { background-position: -112px 0; }
+nails .ui-icon-caret-2-n-s { background-position: -128px 0; }
+nails .ui-icon-caret-2-e-w { background-position: -144px 0; }
+nails .ui-icon-triangle-1-n { background-position: 0 -16px; }
+nails .ui-icon-triangle-1-ne { background-position: -16px -16px; }
+nails .ui-icon-triangle-1-e { background-position: -32px -16px; }
+nails .ui-icon-triangle-1-se { background-position: -48px -16px; }
+nails .ui-icon-triangle-1-s { background-position: -65px -16px; }
+nails .ui-icon-triangle-1-sw { background-position: -80px -16px; }
+nails .ui-icon-triangle-1-w { background-position: -96px -16px; }
+nails .ui-icon-triangle-1-nw { background-position: -112px -16px; }
+nails .ui-icon-triangle-2-n-s { background-position: -128px -16px; }
+nails .ui-icon-triangle-2-e-w { background-position: -144px -16px; }
+nails .ui-icon-arrow-1-n { background-position: 0 -32px; }
+nails .ui-icon-arrow-1-ne { background-position: -16px -32px; }
+nails .ui-icon-arrow-1-e { background-position: -32px -32px; }
+nails .ui-icon-arrow-1-se { background-position: -48px -32px; }
+nails .ui-icon-arrow-1-s { background-position: -65px -32px; }
+nails .ui-icon-arrow-1-sw { background-position: -80px -32px; }
+nails .ui-icon-arrow-1-w { background-position: -96px -32px; }
+nails .ui-icon-arrow-1-nw { background-position: -112px -32px; }
+nails .ui-icon-arrow-2-n-s { background-position: -128px -32px; }
+nails .ui-icon-arrow-2-ne-sw { background-position: -144px -32px; }
+nails .ui-icon-arrow-2-e-w { background-position: -160px -32px; }
+nails .ui-icon-arrow-2-se-nw { background-position: -176px -32px; }
+nails .ui-icon-arrowstop-1-n { background-position: -192px -32px; }
+nails .ui-icon-arrowstop-1-e { background-position: -208px -32px; }
+nails .ui-icon-arrowstop-1-s { background-position: -224px -32px; }
+nails .ui-icon-arrowstop-1-w { background-position: -240px -32px; }
+nails .ui-icon-arrowthick-1-n { background-position: 1px -48px; }
+nails .ui-icon-arrowthick-1-ne { background-position: -16px -48px; }
+nails .ui-icon-arrowthick-1-e { background-position: -32px -48px; }
+nails .ui-icon-arrowthick-1-se { background-position: -48px -48px; }
+nails .ui-icon-arrowthick-1-s { background-position: -64px -48px; }
+nails .ui-icon-arrowthick-1-sw { background-position: -80px -48px; }
+nails .ui-icon-arrowthick-1-w { background-position: -96px -48px; }
+nails .ui-icon-arrowthick-1-nw { background-position: -112px -48px; }
+nails .ui-icon-arrowthick-2-n-s { background-position: -128px -48px; }
+nails .ui-icon-arrowthick-2-ne-sw { background-position: -144px -48px; }
+nails .ui-icon-arrowthick-2-e-w { background-position: -160px -48px; }
+nails .ui-icon-arrowthick-2-se-nw { background-position: -176px -48px; }
+nails .ui-icon-arrowthickstop-1-n { background-position: -192px -48px; }
+nails .ui-icon-arrowthickstop-1-e { background-position: -208px -48px; }
+nails .ui-icon-arrowthickstop-1-s { background-position: -224px -48px; }
+nails .ui-icon-arrowthickstop-1-w { background-position: -240px -48px; }
+nails .ui-icon-arrowreturnthick-1-w { background-position: 0 -64px; }
+nails .ui-icon-arrowreturnthick-1-n { background-position: -16px -64px; }
+nails .ui-icon-arrowreturnthick-1-e { background-position: -32px -64px; }
+nails .ui-icon-arrowreturnthick-1-s { background-position: -48px -64px; }
+nails .ui-icon-arrowreturn-1-w { background-position: -64px -64px; }
+nails .ui-icon-arrowreturn-1-n { background-position: -80px -64px; }
+nails .ui-icon-arrowreturn-1-e { background-position: -96px -64px; }
+nails .ui-icon-arrowreturn-1-s { background-position: -112px -64px; }
+nails .ui-icon-arrowrefresh-1-w { background-position: -128px -64px; }
+nails .ui-icon-arrowrefresh-1-n { background-position: -144px -64px; }
+nails .ui-icon-arrowrefresh-1-e { background-position: -160px -64px; }
+nails .ui-icon-arrowrefresh-1-s { background-position: -176px -64px; }
+nails .ui-icon-arrow-4 { background-position: 0 -80px; }
+nails .ui-icon-arrow-4-diag { background-position: -16px -80px; }
+nails .ui-icon-extlink { background-position: -32px -80px; }
+nails .ui-icon-newwin { background-position: -48px -80px; }
+nails .ui-icon-refresh { background-position: -64px -80px; }
+nails .ui-icon-shuffle { background-position: -80px -80px; }
+nails .ui-icon-transfer-e-w { background-position: -96px -80px; }
+nails .ui-icon-transferthick-e-w { background-position: -112px -80px; }
+nails .ui-icon-folder-collapsed { background-position: 0 -96px; }
+nails .ui-icon-folder-open { background-position: -16px -96px; }
+nails .ui-icon-document { background-position: -32px -96px; }
+nails .ui-icon-document-b { background-position: -48px -96px; }
+nails .ui-icon-note { background-position: -64px -96px; }
+nails .ui-icon-mail-closed { background-position: -80px -96px; }
+nails .ui-icon-mail-open { background-position: -96px -96px; }
+nails .ui-icon-suitcase { background-position: -112px -96px; }
+nails .ui-icon-comment { background-position: -128px -96px; }
+nails .ui-icon-person { background-position: -144px -96px; }
+nails .ui-icon-print { background-position: -160px -96px; }
+nails .ui-icon-trash { background-position: -176px -96px; }
+nails .ui-icon-locked { background-position: -192px -96px; }
+nails .ui-icon-unlocked { background-position: -208px -96px; }
+nails .ui-icon-bookmark { background-position: -224px -96px; }
+nails .ui-icon-tag { background-position: -240px -96px; }
+nails .ui-icon-home { background-position: 0 -112px; }
+nails .ui-icon-flag { background-position: -16px -112px; }
+nails .ui-icon-calendar { background-position: -32px -112px; }
+nails .ui-icon-cart { background-position: -48px -112px; }
+nails .ui-icon-pencil { background-position: -64px -112px; }
+nails .ui-icon-clock { background-position: -80px -112px; }
+nails .ui-icon-disk { background-position: -96px -112px; }
+nails .ui-icon-calculator { background-position: -112px -112px; }
+nails .ui-icon-zoomin { background-position: -128px -112px; }
+nails .ui-icon-zoomout { background-position: -144px -112px; }
+nails .ui-icon-search { background-position: -160px -112px; }
+nails .ui-icon-wrench { background-position: -176px -112px; }
+nails .ui-icon-gear { background-position: -192px -112px; }
+nails .ui-icon-heart { background-position: -208px -112px; }
+nails .ui-icon-star { background-position: -224px -112px; }
+nails .ui-icon-link { background-position: -240px -112px; }
+nails .ui-icon-cancel { background-position: 0 -128px; }
+nails .ui-icon-plus { background-position: -16px -128px; }
+nails .ui-icon-plusthick { background-position: -32px -128px; }
+nails .ui-icon-minus { background-position: -48px -128px; }
+nails .ui-icon-minusthick { background-position: -64px -128px; }
+nails .ui-icon-close { background-position: -80px -128px; }
+nails .ui-icon-closethick { background-position: -96px -128px; }
+nails .ui-icon-key { background-position: -112px -128px; }
+nails .ui-icon-lightbulb { background-position: -128px -128px; }
+nails .ui-icon-scissors { background-position: -144px -128px; }
+nails .ui-icon-clipboard { background-position: -160px -128px; }
+nails .ui-icon-copy { background-position: -176px -128px; }
+nails .ui-icon-contact { background-position: -192px -128px; }
+nails .ui-icon-image { background-position: -208px -128px; }
+nails .ui-icon-video { background-position: -224px -128px; }
+nails .ui-icon-script { background-position: -240px -128px; }
+nails .ui-icon-alert { background-position: 0 -144px; }
+nails .ui-icon-info { background-position: -16px -144px; }
+nails .ui-icon-notice { background-position: -32px -144px; }
+nails .ui-icon-help { background-position: -48px -144px; }
+nails .ui-icon-check { background-position: -64px -144px; }
+nails .ui-icon-bullet { background-position: -80px -144px; }
+nails .ui-icon-radio-on { background-position: -96px -144px; }
+nails .ui-icon-radio-off { background-position: -112px -144px; }
+nails .ui-icon-pin-w { background-position: -128px -144px; }
+nails .ui-icon-pin-s { background-position: -144px -144px; }
+nails .ui-icon-play { background-position: 0 -160px; }
+nails .ui-icon-pause { background-position: -16px -160px; }
+nails .ui-icon-seek-next { background-position: -32px -160px; }
+nails .ui-icon-seek-prev { background-position: -48px -160px; }
+nails .ui-icon-seek-end { background-position: -64px -160px; }
+nails .ui-icon-seek-start { background-position: -80px -160px; }
+/* ui-icon-seek-first is deprecated, use ui-icon-seek-start instead */
+nails .ui-icon-seek-first { background-position: -80px -160px; }
+nails .ui-icon-stop { background-position: -96px -160px; }
+nails .ui-icon-eject { background-position: -112px -160px; }
+nails .ui-icon-volume-off { background-position: -128px -160px; }
+nails .ui-icon-volume-on { background-position: -144px -160px; }
+nails .ui-icon-power { background-position: 0 -176px; }
+nails .ui-icon-signal-diag { background-position: -16px -176px; }
+nails .ui-icon-signal { background-position: -32px -176px; }
+nails .ui-icon-battery-0 { background-position: -48px -176px; }
+nails .ui-icon-battery-1 { background-position: -64px -176px; }
+nails .ui-icon-battery-2 { background-position: -80px -176px; }
+nails .ui-icon-battery-3 { background-position: -96px -176px; }
+nails .ui-icon-circle-plus { background-position: 0 -192px; }
+nails .ui-icon-circle-minus { background-position: -16px -192px; }
+nails .ui-icon-circle-close { background-position: -32px -192px; }
+nails .ui-icon-circle-triangle-e { background-position: -48px -192px; }
+nails .ui-icon-circle-triangle-s { background-position: -64px -192px; }
+nails .ui-icon-circle-triangle-w { background-position: -80px -192px; }
+nails .ui-icon-circle-triangle-n { background-position: -96px -192px; }
+nails .ui-icon-circle-arrow-e { background-position: -112px -192px; }
+nails .ui-icon-circle-arrow-s { background-position: -128px -192px; }
+nails .ui-icon-circle-arrow-w { background-position: -144px -192px; }
+nails .ui-icon-circle-arrow-n { background-position: -160px -192px; }
+nails .ui-icon-circle-zoomin { background-position: -176px -192px; }
+nails .ui-icon-circle-zoomout { background-position: -192px -192px; }
+nails .ui-icon-circle-check { background-position: -208px -192px; }
+nails .ui-icon-circlesmall-plus { background-position: 0 -208px; }
+nails .ui-icon-circlesmall-minus { background-position: -16px -208px; }
+nails .ui-icon-circlesmall-close { background-position: -32px -208px; }
+nails .ui-icon-squaresmall-plus { background-position: -48px -208px; }
+nails .ui-icon-squaresmall-minus { background-position: -64px -208px; }
+nails .ui-icon-squaresmall-close { background-position: -80px -208px; }
+nails .ui-icon-grip-dotted-vertical { background-position: 0 -224px; }
+nails .ui-icon-grip-dotted-horizontal { background-position: -16px -224px; }
+nails .ui-icon-grip-solid-vertical { background-position: -32px -224px; }
+nails .ui-icon-grip-solid-horizontal { background-position: -48px -224px; }
+nails .ui-icon-gripsmall-diagonal-se { background-position: -64px -224px; }
+nails .ui-icon-grip-diagonal-se { background-position: -80px -224px; }
+
+
+/* Misc visuals
+----------------------------------*/
+
+/* Corner radius */
+nails .ui-corner-all,
+nails .ui-corner-top,
+nails .ui-corner-left,
+nails .ui-corner-tl {
+	border-top-left-radius: 5px;
+}
+nails .ui-corner-all,
+nails .ui-corner-top,
+nails .ui-corner-right,
+nails .ui-corner-tr {
+	border-top-right-radius: 5px;
+}
+nails .ui-corner-all,
+nails .ui-corner-bottom,
+nails .ui-corner-left,
+nails .ui-corner-bl {
+	border-bottom-left-radius: 5px;
+}
+nails .ui-corner-all,
+nails .ui-corner-bottom,
+nails .ui-corner-right,
+nails .ui-corner-br {
+	border-bottom-right-radius: 5px;
+}
+
+/* Overlays */
+nails .ui-widget-overlay {
+	background: #372806 url("images/ui-bg_diamond_20_372806_10x8.png") 50% 50% repeat;
+	opacity: .8;
+	filter: Alpha(Opacity=80); /* support: IE8 */
+}
+nails .ui-widget-shadow {
+	-webkit-box-shadow: -8px -8px 8px #ddd4b0;
+	box-shadow: -8px -8px 8px #ddd4b0;
+}
