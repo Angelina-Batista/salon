@@ -1,27 +1,39 @@
-
-#ui-datepicker-div{
+#ui-datepicker-div {
     background: #fff;
 }
 
 
 
-nav.navbar-expand-lg.navbar-light.bg-light{
+nav.navbar-expand-lg.navbar-light.bg-light {
     background: initial !important;
 }
 
 header {
     height: 600px;
     width: 100%;
-    background-image: url("new-imgs/1.jpg");
+
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center -100px;
 }
 
+.main-header {
+    background-image: url("new-imgs/1.jpg");
+}
+
+.main-header h1 {
+    text-align: center; 
+    vertical-align: center;
+}
+.book {
+    background-color: #F1C8BD;
+    border-radius: 10%;
+}
+
 .pricing {
     font-size: 30px;
     padding: 15px 20px;
-    
+
 
     color: #fff;
     background-color: #F1C8BD;
@@ -33,7 +45,7 @@ span.pricing-label>h4 {
     padding: 15px 20px;
 
     color: #fff;
-    background-color: #353535;
+    background-color: #DB7093;
 
     text-align: center;
 }
@@ -52,17 +64,28 @@ span.pricing-label>h4 {
     padding: 15px 20px;
 
     color: #fff;
-    background-color: #477152;
+    background-color: #FFB6C1;
     border-radius: 10%;
 
 }
+
+span.time-label>h4 {
+    font-size: 30px;
+    padding: 15px 20px;
+
+    color: #fff;
+    background-color: #DB7093;
+
+    text-align: center;
+}
+
 
 .contact {
     font-size: 30px;
     padding: 15px 20px;
 
     color: #fff;
-    background-color: #545461;
+    background-color: #FF69B4;
     border-radius: 10%;
 }
 
@@ -71,24 +94,71 @@ span.pricing-label>h4 {
     padding: 15px 20px;
 
     color: #fff;
-    background-color: #918146;
+    background-color: #C71585;
     border-radius: 10%;
 }
 
 
-body{
+body {
     display: flex;
     flex-direction: column;
     align-items: center;
     background: #F6DCD4;
 }
 
-section#book{
-    position:relative;
+section#book {
+    position: relative;
     border: 1px solid #ccc;
     margin: 10px 0 30px 0;
     min-height: 150px;
     border-radius: 12px;
     padding: 12px;
 
+}
+
+.parallax {
+    /* The image used */
+    /* Set a specific height */
+    height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.book-img {
+    background-image: url("https://images.bobitbeauty.com/post/L-Champagne6201HollywoodBlvd04LeftSide.jpg");
+    height: 300px;
+
+}
+
+.social-box {
+  display: inline-block;
+  width: 3em;
+  height: 3em;
+  margin-right: 1em;
+  background-color: steelblue;
+  text-align: center;
+}
+
+.social-box:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.25em; /* Adjusts for spacing */
+}
+
+.social-box a {  
+  color: white;
+  font-size: 2em;
+  margin: auto;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.container div:last-child {
+  margin-right: 0;
 }

@@ -35,16 +35,18 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <!--    <div class="navbar-nav"> -->
-            <a class="nav-item nav-link active" href="#book">Book an Appoinment<span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link active" href="#book">Book an Appointment<span class="sr-only">(current)</span></a>
             <a class="nav-item nav-link" href="#time">Time</a>
             <a class="nav-item nav-link" href="#pricing">Pricing</a>
             <a class="nav-item nav-link" href="#contact">Contact Us</a>
             <a class="nav-item nav-link" href="#contact">Our Team</a>
         </div>
     </nav>
-    <header></header>
-    <section class="container Book an appointment" id="book">
-        <h3>Book an appointment:</h3>
+    <header class="parallax main-header">
+        <h1> Uniform Nails </h1>
+    </header>
+    <section class="container book" id="book">
+        <h3>Book an Appointment</h3>
 
         <form id="appt">
 
@@ -64,7 +66,7 @@
                 </select>
             </div>
             <input id="datepicker" />
-            <input type="text" name="timepicker" class="timepicker"/>
+            <input type="text" name="timepicker" class="timepicker" />
             <input class="btn btn-primary" type="submit" value="Submit">
 
 
@@ -72,6 +74,7 @@
 
 
     </section>
+    <header class="parallax book-img"></header>
 
     <section class="container pricing wow fadeInDown" id="pricing">
         <h1><b>Pricing:</h1></b>
@@ -135,22 +138,22 @@
             <h1> </h1>
             <div class="row">
                 <div class="col-md-3">
-                    <span>
+                    <span class="time-label">
                     <h4>Monday-Thursday</h4>
                 </span>
                 </div>
                 <div class="col-md-3">
-                    <span>
+                    <span class="time-label">
                     <h4>Friday</h4>
                 </span>
                 </div>
                 <div class="col-md-3">
-                    <span>
+                    <span class="time-label">
                     <h4>Saturday</h4>
                 </span>
                 </div>
                 <div class="col-md-3">
-                    <span>
+                    <span class="time-label">
                     <h4>Sunday</h4>
                 </span>
                 </div>
@@ -218,7 +221,7 @@
     <section class="container contact wow fadeInDown" id="contact">
         <div class="row">
             <div class="col-md-4">
-                <h1><b>Contact Us</h1></b>
+                <h1><b>Contact Us:</h1></b>
                     <i class="fas fa-home"></i> Address: 859 West Forest, 11023 NY
                     <p></p>
                     <i class="fas fa-envelope"></i> Email: nails2cute@gmail.com
@@ -232,8 +235,8 @@
 
     </section>
 
-    <section class="team container wow fadeInDown"> 
-    <p></p>
+    <section class="team container wow fadeInDown">
+        <p></p>
         <h1><b>Our Team:</h1></b>
             <br>
             <h1> </h1>
@@ -261,19 +264,29 @@
 
 
     </section>
+    <footer>
+        <div class='container'>
+            <div class='social-box'>
+                <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+            </div>
+            <div class='social-box'>
+                <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
 
-    <script
-            src="https://code.jquery.com/jquery-3.3.1.min.js"
-            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-            crossorigin="anonymous"></script>
-    <script
-            src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
-            integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
-            crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/wickedpicker.min.js"></script>
 
 
-        <script src="js/main.js"></script>
+    <script src="js/main.js"></script>
+
+
+
+
+
 </body>
 
 </html>
