@@ -2,7 +2,10 @@ const onReady = (e)=>{
 
     console.log('DOC IS READY');
     $('#datepicker').datepicker();
-    $('.timepicker').wickedpicker();
+    $('.timepicker').wickedpicker({
+        minutesInterval: 15,
+        now: "17:00",
+    });
 
 
 };

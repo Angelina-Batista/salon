@@ -2,58 +2,56 @@
 <html>
 
 <head>
+
+    <title>Uniform Nails</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="style.css">
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" />
-
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="js/jquery-ui/jquery-ui.min.css" />
     <link rel="stylesheet" href="js/wickedpicker.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Hammersmith+One" rel="stylesheet">
 
+    <link href="https://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet">
 
+    <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
 
 <body>
 
-
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js" integrity="sha384-7aThvCh9TypR7fIc2HV4O/nFMVCBwyIUKL8XCtKE+8xgCgl/PQGuFsvShjr74PBp" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-    <script>
-        new WOW().init();
-    </script>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <a class="navbar-brand" href="#"> 
             <img src="nail.png" width="60" height="60" class="d-inline-block align-top" alt=""></img>
-            Uniform Nails
-            
+            <span id="logo">Uniform Nails</span>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <!--    <div class="navbar-nav"> -->
-            <a class="nav-item nav-link active" href="#book">Book an Appointment<span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link" href="#time">Time</a>
-            <a class="nav-item nav-link" href="#pricing">Pricing</a>
-            <a class="nav-item nav-link" href="#contact">Contact Us</a>
-            <a class="nav-item nav-link" href="#contact">Our Team</a>
+            <div class="navbar-nav ml-auto">
+                <a class="nav-item nav-link" href="#book">Book an Appointment<span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="#time">Pricing</a>
+                <a class="nav-item nav-link" href="#pricing">Time</a>
+                <a class="nav-item nav-link" href="#contact">Contact Us</a>
+                <a class="nav-item nav-link" href="#contact">Our Team</a>
+            </div>
         </div>
     </nav>
-    <header class="parallax main-header">
-        <h1> Uniform Nails </h1>
+    <header class="d-flex align-items-center parallax main-header">
+        <div class="container">
+            <h1> Uniform Nails </h1>
+            <link href="https://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet">
+        </div>
     </header>
+
     <section class="container book" id="book">
         <h3>Book an Appointment</h3>
-
         <form id="appt">
-
 
             <div class="form-group">
                 <label for="appt-name">Full Name</label>
-                <input type="name" class="form-control" id="appt-name" placeholder="name">
+                <input type="name" class="form-control" id="appt-name" placeholder="Name">
             </div>
             <div class="form-group">
                 <label for="exampleFormControlSelect1">Services</label>
@@ -65,6 +63,7 @@
 
                 </select>
             </div>
+            <i class="fas fa-calendar"></i>
             <input id="datepicker" />
             <input type="text" name="timepicker" class="timepicker" />
             <input class="btn btn-primary" type="submit" value="Submit">
@@ -74,60 +73,56 @@
 
 
     </section>
-    <header class="parallax book-img"></header>
 
     <section class="container pricing wow fadeInDown" id="pricing">
-        <h1><b>Pricing:</h1></b>
-            <br>
-            <h1> </h1>
-            <div class="row">
-                <div class="col-md-3">
-                    <span class="pricing-label">
-                    <h4>Lacquer</h4>
-                </span>
-                </div>
-                <div class="col-md-3">
-                    <span class="pricing-label">
-                    <h4>Gel</h4>
-                </span>
-                </div>
-                <div class="col-md-3">
-                    <span class="pricing-label">
-                    <h4>French Tip</h4>
-                </span>
-                </div>
-                <div class="col-md-3">
-                    <span class="pricing-label">
-                    <h4>Acrylic</h4>
-                </span>
-                </div>
-            </div>
+        <h1>Pricing:</h1>
 
-            <div class="row">
-                <div class="col-md-3">
-                    <span class="prices">$10.00</span>
-                </div>
-                <div class="col-md-3">
-                    <span class="prices">$15.00</span>
-                </div>
-                <div class="col-md-3">
-                    <span class="prices">$30.00</span>
-                </div>
-                <div class="col-md-3">
-                    <span class="prices">$40.00</span>
-                </div>
+        <br>
+        <h1> </h1>
+        <div class="row">
+            <div class="col-md-6">
+                <span class="pricing-label">
+                    <img src="lacquer.jpg" class="serviceImg"></img>
+                    <h4>Lacquer:$10.00</h4>
+
+                </span>
             </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <p> </p>
-                </div>
-                <div class="col-md-4">
-                    <p> </p>
-                </div>
-                <div class="col-md-4">
-                    <p> </p>
-                </div>
+            <div class="col-md-6">
+                <span class="pricing-label">
+                    <img src="gel.jpg" class="serviceImg"></img>
+                    <h4>Gel:$15.00</h4>
+
+                </span>
             </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <span class="pricing-label">
+                    <img src="frenchtip.jpg" class="serviceImg"></img>
+                    <h4>French Tip:$30.00</h4>
+
+                </span>
+            </div>
+            <div class="col-md-6">
+                <span class="pricing-label">
+                    <img src="acrylic.jpg" class="serviceImg"></img>
+                    <h4>Acrylic:$40.00</h4>
+                </span>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <p> </p>
+            </div>
+            <div class="col-md-4">
+                <p> </p>
+            </div>
+            <div class="col-md-4">
+                <p> </p>
+            </div>
+        </div>
+
 
 
     </section>
@@ -220,20 +215,31 @@
 
     <section class="container contact wow fadeInDown" id="contact">
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-6">
                 <h1><b>Contact Us:</h1></b>
-                    <i class="fas fa-home"></i> Address: 859 West Forest, 11023 NY
+                    <i class="fas fa-home"></i> Address: 859 Great Neck, 11023 NY
                     <p></p>
-                    <i class="fas fa-envelope"></i> Email: nails2cute@gmail.com
+                    <i class="fas fa-envelope"></i> Email: uniformnails@gmail.com
                     <p></p>
                     <i class="fas fa-phone"></i> Phone Number: (718)-134-3253
                     <p></p>
-                    <i class="fas fa-globe"></i> Website: nails2cute.com
+                    <i class="fas fa-globe"></i> Website: uniformnails.com
                     <p></p>
+
             </div>
+                                <div class="col-md-6">
+
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6771.212911986219!2d-73.73366442473598!3d40.799738955508026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c289765197187b%3A0xf45df16f9a453084!2sGreat+Neck%2C+NY+11023!5e0!3m2!1sen!2sus!4v1555536913354!5m2!1sen!2sus"
+                            width="90%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+                        <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+
+                    </div>
         </div>
 
+
     </section>
+
 
     <section class="team container wow fadeInDown">
         <p></p>
@@ -242,7 +248,7 @@
             <h1> </h1>
             <div class="row">
                 <div class="col-md-4">
-                    <img src="new-imgs/1.jpg"></img>
+                    <img src="codingpt1.jpg"></img>
                     <h1> Michelle Lauren </h1>
                     <h3>Owner</h3>
                     <p>Michelle Lauren founded the famous Uniform Nails in 2018. It has services such as Lacquer, Gel, French Tip and finally Acrylic Nails</p>
@@ -262,30 +268,63 @@
                     <p>Sebastian Williams has been known as the top receptionist with a constant smile for over 5 years. </p>
                 </div>
 
-
     </section>
-    <footer>
-        <div class='container'>
-            <div class='social-box'>
-                <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+
+    <footer class="footer container">
+        <div class="row">
+            <div class="col-md-4">
+                <h3>Contact Us</h3>
+                <i class="fas fa-home"></i> Address
+                <p>859 West Forest, 11023 NY</p>
+                <i class="fas fa-envelope"></i> Email
+                <p>uniformnails@gmail.com</p>
+                <i class="fas fa-phone"></i> Phone Number
+                <p>(718)-134-3253</p>
+                <i class="fas fa-globe"></i> Website
+                <p>uniformnails.com</p>
             </div>
-            <div class='social-box'>
-                <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+            <div class="col-md-4">
+                <h3>About Us</h3>
+                <p>We opened our doors in 2018. We are hoping to not only create magic on your nails but also create a smile before you leave our location. We have been voted 5 stars out of 5 for the best upcoming nail salon. You can view more reviews on
+                    our social media. </p>
+            </div>
+            <div class="col-md-4">
+                <h3>Social Media</h3>
+                <div>
+                    <a href="https://www.facebook.com/uni.nails.716/about?section=overview&force-refresh&lst=100035788871703%3A100035788871703%3A1555535474" target="_blank">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://www.twitter.com/uniformnails" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.instagram.com/uniformnails/?hl=en" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+                <div class="input-group mb-3">
+                    <input type="text" placeholder="Email"></input>
+                    <div class="input-group-append">
+                        <button type="button" class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
 
 
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js" integrity="sha384-7aThvCh9TypR7fIc2HV4O/nFMVCBwyIUKL8XCtKE+8xgCgl/PQGuFsvShjr74PBp" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/wickedpicker.min.js"></script>
-
+    <script>
+        new WOW().init();
+    </script>
 
     <script src="js/main.js"></script>
-
-
-
-
 
 </body>
 
